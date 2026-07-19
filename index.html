@@ -12,7 +12,7 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%231a1c1d'/%3E%3Ctext x='12' y='43' font-size='31' font-family='Arial' font-weight='700' fill='%23f1efe8'%3EZY%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -67,14 +67,14 @@
     </div>
 
     <section id="work" class="work section-shell">
-      <header class="section-heading reveal">
+      <header class="section-heading">
         <p class="eyebrow">Selected work</p>
         <h2>Useful infrastructure, not another demo.</h2>
         <p>The work I’m proudest of makes complex technology easier to discover, operate and improve.</p>
       </header>
 
       <div class="work-grid">
-        <article class="work-item work-feature reveal-card">
+        <article class="work-item work-feature">
           <div class="work-number">01</div>
           <div class="work-copy">
             <p class="work-type">Internal platform</p>
@@ -87,7 +87,7 @@
           </dl>
         </article>
 
-        <article class="work-item work-small reveal-card">
+        <article class="work-item work-small">
           <div class="work-number">02</div>
           <div class="work-copy">
             <p class="work-type">Engineering enablement</p>
@@ -96,7 +96,7 @@
           </div>
         </article>
 
-        <article class="work-item work-small reveal-card">
+        <article class="work-item work-small">
           <div class="work-number">03</div>
           <div class="work-copy">
             <p class="work-type">Operations</p>
@@ -105,7 +105,7 @@
           </div>
         </article>
 
-        <article class="work-item work-feature reveal-card">
+        <article class="work-item work-feature">
           <div class="work-number">04</div>
           <div class="work-copy">
             <p class="work-type">Internal hackathon</p>
@@ -123,70 +123,65 @@
     <section class="proof" aria-label="Delivery record">
       <div class="section-shell proof-inner">
         <p class="eyebrow">A record of delivery</p>
-        <div class="proof-carousel">
-          <blockquote class="proof-slide active"><span>160+</span> pull requests delivered across 30+ repositories.</blockquote>
-          <blockquote class="proof-slide"><span>60+</span> Jira tickets completed across enterprise initiatives.</blockquote>
-          <blockquote class="proof-slide"><span>20+</span> repositories using shared engineering workflows.</blockquote>
-        </div>
-        <div class="proof-controls" aria-label="Delivery record controls">
-          <button type="button" data-direction="prev" aria-label="Previous outcome">←</button>
-          <p><span id="proof-current">1</span> / 3</p>
-          <button type="button" data-direction="next" aria-label="Next outcome">→</button>
+        <div class="proof-list">
+          <div class="proof-stat"><strong>160+</strong><p>pull requests across 30+ repositories</p></div>
+          <div class="proof-stat"><strong>60+</strong><p>Jira tickets completed</p></div>
+          <div class="proof-stat"><strong>20+</strong><p>repositories using shared workflows</p></div>
         </div>
       </div>
     </section>
 
     <section id="experience" class="experience section-shell">
-      <header class="experience-intro reveal">
+      <header class="experience-intro">
         <p class="eyebrow">Experience</p>
         <h2>Four teams.<br>One continuous thread.</h2>
         <p>I’ve moved from applied NLP to product engineering and enterprise platforms, keeping the same focus: make technically ambitious work practical.</p>
       </header>
 
-      <div class="roles" data-accordion>
-        <article class="role open">
-          <button class="role-toggle" type="button" aria-expanded="true">
-            <span class="role-period">2025 — now</span><span class="role-company">Macquarie Group</span><span class="role-name">AI Engineer</span><span class="role-icon">−</span>
-          </button>
-          <div class="role-panel">
-            <div><p>Building agent infrastructure, observability and evaluation systems, MCP integrations, multi-agent workflows and internal developer platforms.</p></div>
+      <div class="roles">
+        <article class="role">
+          <div class="role-head">
+            <span class="role-period">2025 — now</span><h3 class="role-company">Macquarie Group</h3><span class="role-name">AI Engineer · Sydney</span>
+          </div>
+          <div class="role-body">
+            <p>Building agent infrastructure, observability and evaluation systems, MCP integrations, multi-agent workflows and internal developer platforms.</p>
             <ul><li>Grafana & observability</li><li>MCP server enablement</li><li>Plugin ecosystems</li></ul>
           </div>
         </article>
 
         <article class="role">
-          <button class="role-toggle" type="button" aria-expanded="false">
-            <span class="role-period">2024 — 2025</span><span class="role-company">Synogize</span><span class="role-name">AI Engineer</span><span class="role-icon">+</span>
-          </button>
-          <div class="role-panel">
-            <div><p>Researched natural-language-to-SQL systems and developed multi-agent solutions, including agentic RAG architectures.</p></div>
+          <div class="role-head">
+            <span class="role-period">2024 — 2025</span><h3 class="role-company">Synogize</h3><span class="role-name">AI Engineer · Sydney</span>
+          </div>
+          <div class="role-body">
+            <p>Researched natural-language-to-SQL systems and developed multi-agent solutions, including agentic RAG architectures.</p>
             <ul><li>LangGraph</li><li>Pydantic AI</li><li>Architecture design</li></ul>
           </div>
         </article>
 
         <article class="role">
-          <button class="role-toggle" type="button" aria-expanded="false">
-            <span class="role-period">2023 — 2024</span><span class="role-company">NUVC</span><span class="role-name">AI Developer</span><span class="role-icon">+</span>
-          </button>
-          <div class="role-panel">
-            <div><p>Built an LLM-powered decision-support product for venture capital workflows across frontend, backend and data pipelines.</p></div>
+          <div class="role-head">
+            <span class="role-period">2023 — 2024</span><h3 class="role-company">NUVC</h3><span class="role-name">AI Developer · Sydney</span>
+          </div>
+          <div class="role-body">
+            <p>Built an LLM-powered decision-support product for venture capital workflows across frontend, backend and data pipelines.</p>
             <ul><li>LangChain</li><li>FastAPI</li><li>Next.js</li></ul>
           </div>
         </article>
 
         <article class="role">
-          <button class="role-toggle" type="button" aria-expanded="false">
-            <span class="role-period">2021 — 2022</span><span class="role-company">Xiaobing.ai</span><span class="role-name">NLP Engineer</span><span class="role-icon">+</span>
-          </button>
-          <div class="role-panel">
-            <div><p>Developed enterprise chatbots and retrieval systems, and led a government supply-demand platform generating approximately ¥5M CNY shortly after launch.</p></div>
+          <div class="role-head">
+            <span class="role-period">2021 — 2022</span><h3 class="role-company">Xiaobing.ai</h3><span class="role-name">NLP Engineer · Suzhou</span>
+          </div>
+          <div class="role-body">
+            <p>Developed enterprise chatbots and retrieval systems, and led a government supply-demand platform generating approximately ¥5M CNY shortly after launch.</p>
             <ul><li>Transformers</li><li>PyTorch</li><li>Rasa</li></ul>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="education section-shell reveal">
+    <section class="education section-shell">
       <p class="eyebrow">Education</p>
       <div><h2>The University of Sydney</h2><p>Master of Computer Science · 2022 — 2024</p></div>
       <p>Machine Learning, Deep Learning, NLP, Multimedia Retrieval and Project Management.</p>
@@ -205,8 +200,5 @@
     </section>
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-  <script src="script.js"></script>
 </body>
 </html>
